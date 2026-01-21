@@ -14,48 +14,66 @@ body{
 }
 a{text-decoration:none}
 
-/* HEADER */
+/* NEW HEADER DESIGN */
 .main-header{
   background:#000;
   color:#fff;
-  position:sticky;
-  top:0;
-  z-index:1000;
+  padding:20px 22px 12px;
 }
-.header-container{
+
+.header-top{
   max-width:1200px;
   margin:auto;
-  padding:15px 20px;
   display:flex;
-  align-items:center;
   justify-content:space-between;
-}
-.logo{
-  display:block;
-  max-width:420px;
+  align-items:flex-start;
 }
 
-.logo h1{
+.brand h1{
   margin:0;
-  font-size:36px;
-  letter-spacing:3px;
-  white-space:nowrap;
+  font-size:40px;
+  letter-spacing:4px;
 }
 
-.logo small{
-  display:block;
-  margin-top:4px;
+.brand-info{
+  text-align:right;
+}
+
+.brand-info .unit{
   font-size:13px;
   opacity:.85;
-  white-space:nowrap;
 }
 
-.logo span{
-  display:block;
-  margin-top:6px;
+.brand-info .premium{
   font-size:14px;
-  opacity:.95;
-  white-space:nowrap;
+  margin-top:4px;
+}
+
+.main-nav{
+  max-width:1200px;
+  margin:15px auto 0;
+  display:flex;
+  justify-content:center;
+  gap:22px;
+  flex-wrap:wrap;
+}
+
+.main-nav a{
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+  padding-bottom:4px;
+}
+
+.main-nav a:hover{
+  border-bottom:2px solid #fff;
+}
+
+.contact-btn{
+  background:#fff;
+  color:#000 !important;
+  padding:6px 12px;
+  border-radius:4px;
 }
 .logo h1{
   margin:0;
