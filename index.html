@@ -1,29 +1,4 @@
-<!-- ===== PROFESSIONAL HEADER START ===== -->
-<header class="main-header">
-  <div class="header-container">
-
-    <div class="logo">
-      <h1>ALVIX</h1>
-      <span>Premium Lighting & Electrical Solutions</span>
-      <small>A Unit of ALVIX Enterprises</small>
-    </div>
-
-    <nav class="nav">
-      <ul>
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#why">Why Choose Us</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#catalog">Catalog</a></li>
-        <li><a href="#contact" class="contact-btn">Contact</a></li>
-      </ul>
-    </nav>
-
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
-  </div>
-</header>
-<!-- ===== PROFESSIONAL HEADER END ===== --><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -31,265 +6,244 @@
 <title>ALVIX | Premium Lighting & Electrical Solutions</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #ffffff;
-    color: #222;
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  color:#222;
+  line-height:1.6;
 }
-header {
-    background: #000;
-    color: #fff;
-    text-align: center;
-    padding: 40px 15px;
+a{text-decoration:none}
+
+/* HEADER */
+.main-header{
+  background:#000;
+  color:#fff;
+  position:sticky;
+  top:0;
+  z-index:1000;
 }
-header h1 {
-    margin: 0;
-    font-size: 42px;
-    letter-spacing: 2px;
+.header-container{
+  max-width:1200px;
+  margin:auto;
+  padding:15px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 }
-header p {
-    margin: 8px 0;
-    font-size: 16px;
-    opacity: 0.9;
+.logo h1{margin:0;font-size:28px;letter-spacing:2px}
+.logo span{display:block;font-size:13px}
+.logo small{font-size:11px;opacity:.7}
+.nav ul{
+  list-style:none;
+  display:flex;
+  gap:20px;
+  margin:0;
+  padding:0;
+}
+.nav a{color:#fff;font-weight:500}
+.contact-btn{
+  background:#fff;
+  color:#000!important;
+  padding:6px 14px;
+  border-radius:4px;
 }
 
-nav {
-    background: #111;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+/* HERO */
+.hero{
+  background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),#111;
+  color:#fff;
+  text-align:center;
+  padding:120px 20px;
 }
-nav a {
-    color: #fff;
-    padding: 14px 20px;
-    text-decoration: none;
-    font-weight: 600;
+.hero h2{font-size:38px;margin-bottom:10px}
+
+/* SECTIONS */
+.section{
+  max-width:1200px;
+  margin:auto;
+  padding:60px 20px;
 }
-nav a:hover {
-    background: #333;
+.section h2{
+  font-size:28px;
+  margin-bottom:20px;
 }
 
-.hero {
-    background: linear-gradient(to right, #000, #222);
-    color: #fff;
-    text-align: center;
-    padding: 80px 20px;
+/* PRODUCTS */
+.products-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
 }
-.hero h2 {
-    font-size: 44px;
-}
-.hero p {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.section {
-    padding: 60px 20px;
-    max-width: 1100px;
-    margin: auto;
-}
-.section h2 {
-    font-size: 34px;
-    margin-bottom: 20px;
+.product-box{
+  border:1px solid #ddd;
+  padding:20px;
+  border-radius:6px;
+  background:#fafafa;
+  font-weight:bold;
 }
 
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 20px;
-}
-.card {
-    border: 1px solid #ddd;
-    padding: 20px;
-    background: #fafafa;
-    font-weight: 600;
+/* TRUST */
+.trust{
+  background:#f5f5f5;
+  text-align:center;
 }
 
-.btn {
-    display: inline-block;
-    background: #000;
-    color: #fff;
-    padding: 14px 24px;
-    text-decoration: none;
-    margin-top: 20px;
-    font-weight: bold;
-}
-.btn:hover {
-    background: #333;
+/* CATALOG */
+.catalog a{
+  display:inline-block;
+  background:#000;
+  color:#fff;
+  padding:12px 22px;
+  border-radius:4px;
 }
 
-ul {
-    line-height: 1.9;
-    font-size: 16px;
+/* FORM */
+form input,form textarea{
+  width:100%;
+  padding:10px;
+  margin-bottom:10px;
+}
+form button{
+  background:#000;
+  color:#fff;
+  padding:10px 20px;
+  border:none;
+  cursor:pointer;
 }
 
-.trust {
-    background: #f5f5f5;
-    text-align: center;
+/* FOOTER */
+footer{
+  background:#000;
+  color:#fff;
+  text-align:center;
+  padding:30px 20px;
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 12px;
-    border: 1px solid #ccc;
-}
-form button {
-    background: #000;
-    color: #fff;
-    padding: 14px;
-    border: none;
-    font-weight: bold;
-    width: 100%;
-}
-
-footer {
-    background: #000;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: #fff;
-    padding: 14px 18px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  padding:14px 18px;
+  border-radius:50px;
+  font-weight:bold;
 }
 </style>
 </head>
 
 <body>
-<!-- ===== PROFESSIONAL HEADER START ===== -->
+
+<!-- HEADER -->
 <header class="main-header">
   <div class="header-container">
-
     <div class="logo">
       <h1>ALVIX</h1>
       <span>Premium Lighting & Electrical Solutions</span>
       <small>A Unit of ALVIX Enterprises</small>
     </div>
-
     <nav class="nav">
       <ul>
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#why">Why Choose Us</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#products">Products</a></li>
         <li><a href="#catalog">Catalog</a></li>
         <li><a href="#contact" class="contact-btn">Contact</a></li>
       </ul>
     </nav>
-
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
   </div>
 </header>
-<!-- ===== PROFESSIONAL HEADER END ===== -->
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About Us</a>
-    <a href="#products">Products</a>
-    <a href="#catalog">Catalog</a>
-    <a href="#contact">Contact</a>
-</nav>
-
+<!-- HERO -->
 <section class="hero" id="home">
-    <h2>Complete Lighting & Electrical Solutions</h2>
-    <p>Indoor | Outdoor | Commercial | Industrial | Solar</p>
+  <h2>Complete Lighting & Electrical Solutions</h2>
+  <p>Indoor | Outdoor | Commercial | Industrial | Solar</p>
 </section>
 
+<!-- ABOUT -->
 <section class="section" id="about">
-    <h2>About ALVIX</h2>
-    <p>
-        ALVIX is a premium lighting brand and a unit of <b>ALVIX Enterprises</b>.
-        We provide high-quality lighting and electrical solutions for residential,
-        commercial, industrial and infrastructure projects.
-    </p>
+  <h2>About ALVIX</h2>
+  <p>
+    ALVIX is a premium lighting brand under <strong>ALVIX Enterprises</strong>,
+    delivering high-quality, energy-efficient and modern lighting solutions
+    for residential, commercial and industrial projects.
+  </p>
 </section>
 
+<!-- WHY -->
 <section class="section">
-    <h2>Why Choose ALVIX</h2>
-    <ul>
-        <li>Premium quality & long-lasting products</li>
-        <li>Energy efficient & modern designs</li>
-        <li>Trusted by contractors & businesses</li>
-        <li>Competitive pricing & strong support</li>
-    </ul>
+  <h2>Why Choose ALVIX</h2>
+  <ul>
+    <li>Premium quality & long-lasting products</li>
+    <li>Energy efficient & modern designs</li>
+    <li>Reliable after-sales support</li>
+    <li>Trusted by professionals & businesses</li>
+  </ul>
 </section>
 
+<!-- PRODUCTS -->
 <section class="section" id="products">
-    <h2>Product Categories</h2>
-    <div class="cards">
-        <div class="card">Indoor Lighting</div>
-        <div class="card">Outdoor Lighting</div>
-        <div class="card">Street & Infrastructure Lighting</div>
-        <div class="card">Solar Lighting</div>
-        <div class="card">Decorative & Home Lighting</div>
-        <div class="card">Electrical Accessories</div>
-        <div class="card">Smart & Advanced Lighting</div>
-    </div>
+  <h2>Product Categories</h2>
+  <div class="products-grid">
+    <div class="product-box">Indoor Lighting</div>
+    <div class="product-box">Outdoor Lighting</div>
+    <div class="product-box">Street & Infrastructure Lighting</div>
+    <div class="product-box">Solar Lighting</div>
+    <div class="product-box">Decorative & Home Lighting</div>
+    <div class="product-box">Electrical Accessories</div>
+    <div class="product-box">Smart & Advanced Lighting</div>
+  </div>
 </section>
 
-<section class="section">
-    <h2>Complete Product Range</h2>
-    <ul>
-        <li>LED Panels, Downlights, Ceiling Lights</li>
-        <li>Flood Lights, Street Lights, High Mast</li>
-        <li>Industrial & Commercial Lighting Solutions</li>
-        <li>Solar Street Lights & Solar Systems</li>
-        <li>Switches, Wires, Drivers & Accessories</li>
-    </ul>
+<!-- CATALOG -->
+<section class="section catalog" id="catalog">
+  <h2>Product Catalog</h2>
+  <a href="DOC-20260121-WA0000.pdf" target="_blank">
+    Download Catalog (PDF)
+  </a>
 </section>
 
-<section class="section" id="catalog">
-    <h2>Product Catalog</h2>
-    <p>Download our complete ALVIX product catalog.</p>
-    <a href="DOC-20260121-WA0000.pdf" class="btn" target="_blank">📄 Download Catalog (PDF)</a>
-</section>
-
-<section class="section">
-    <h2>Send Inquiry</h2>
-    <form action="https://wa.me/919310382443" method="get" target="_blank">
-        <input type="text" placeholder="Your Name" required>
-        <input type="tel" placeholder="Phone Number" required>
-        <textarea placeholder="Your Requirement"></textarea>
-        <button type="submit">Send Inquiry on WhatsApp</button>
-    </form>
-</section>
-
+<!-- TRUST -->
 <section class="section trust">
-    <h2>Trusted Lighting Partner</h2>
-    <p>Quality • Reliability • Innovation</p>
+  <h2>Trusted by Professionals</h2>
+  <p>Residential • Commercial • Industrial • Infrastructure</p>
 </section>
 
+<!-- CONTACT -->
 <section class="section" id="contact">
-    <h2>Contact Us</h2>
-    <p><b>Firm:</b> ALVIX Enterprises</p>
-    <p><b>Phone / WhatsApp:</b> +91 9310382443</p>
-    <p><b>Email:</b> alvixenterprises@gmail.com</p>
-    <p><b>GST:</b> 09CKEPT3512L1ZT</p>
-    <p><b>Address:</b> Alvix enterprises Dadri, Greater Noida, Uttar Pradesh</p>
+  <h2>Contact Us</h2>
+  <p>📞 Phone / WhatsApp: <strong>9310382443</strong></p>
+  <p>📧 Email: <strong>alvixenterprises@gmail.com</strong></p>
+  <p>🧾 GST No: <strong>09CKEPT3515L1ZT</strong></p>
+  <p>📍 Escorts Colony, Dadri, Gautam Buddha Nagar, UP – 203207</p>
 
-    <iframe 
-        src="https://www.google.com/maps?q=dadri%20greater%20noida&output=embed"
-        width="100%" height="300" style="border:0;" allowfullscreen>
-    </iframe>
+  <iframe 
+    src="https://maps.google.com/maps?q=alvix%20enterprises%20escorts%20colony%20dadri%20gautam%20buddha%20nagar%20203207&t=&z=15&ie=UTF8&iwloc=&output=embed"
+    width="100%" height="250" style="border:0;" allowfullscreen>
+  </iframe>
+
+  <h3>Send Inquiry</h3>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="tel" placeholder="Phone Number" required>
+    <textarea placeholder="Requirement"></textarea>
+    <button type="submit">Submit</button>
+  </form>
 </section>
 
+<!-- FOOTER -->
 <footer>
-    © 2026 ALVIX | A Unit of ALVIX Enterprises
+  <p>Thank you for choosing ALVIX</p>
+  <p>© 2026 ALVIX Enterprises</p>
+  <p>GST No: 09CKEPT3515L1ZT | Phone: 9310382443</p>
 </footer>
 
-<a href="https://wa.me/919310382443" class="whatsapp" target="_blank">WhatsApp Us</a>
+<!-- WHATSAPP -->
+<a class="whatsapp" target="_blank"
+href="https://wa.me/919310382443">
+WhatsApp
+</a>
 
 </body>
 </html>
