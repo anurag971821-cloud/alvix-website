@@ -6,7 +6,13 @@
 <title>ALVIX | Premium Lighting Solutions</title>
 
 <style>
-  /* HEADER FIX LAYOUT */
+  /* HEADER FIXED LAYOUT */
+.main-header{
+  background:#000;
+  color:#fff;
+  padding:18px 20px 12px;
+}
+
 .header-top{
   max-width:1200px;
   margin:auto;
@@ -15,70 +21,70 @@
   align-items:center;
 }
 
-/* LEFT SIDE TEXT */
+/* LEFT SIDE : ALVIX */
 .brand-left{
-  display:flex;
-  flex-direction:column;
-  gap:6px;
-}
-
-.brand-left .unit{
-  font-size:15px;
-  font-weight:600;
-  letter-spacing:1px;
-  color:#ddd;
-}
-
-.brand-left .premium{
-  font-size:14px;
-  color:#aaa;
-}
-
-/* RIGHT SIDE BRAND NAME */
-.brand-right{
-  font-size:54px;
+  font-size:70px;
   font-weight:800;
   letter-spacing:4px;
   color:#d4af37; /* premium gold */
 }
-  .brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
+
+/* RIGHT SIDE : UNIT INFO */
+.brand-right{
+  text-align:right;
 }
 
-  .brand-text-wrap{
-  display:flex;
-  flex-direction:column;
-  align-items:flex-start;
-}
-
-.unit{
-  font-size:13px;
-  color:#ccc;
-}
-
-.premium{
-  font-size:12px;
-  color:#aaa;
-}
-  font-size:26px;
+.brand-right .unit{
+  font-size:20px;
   font-weight:700;
-  letter-spacing:2px;
-  color:#d4af37; /* premium gold */
+  letter-spacing:1px;
 }
-  .logo{
-  height:60px;
-  width:auto;
-  }
-body{
-  margin:0;
-  font-family:Arial,Helvetica,sans-serif;
-  color:#222;
-  line-height:1.6;
-}
-a{text-decoration:none}
 
+.brand-right .premium{
+  font-size:13px;
+  opacity:0.9;
+  margin-top:4px;
+}
+
+/* NAV */
+.main-nav{
+  max-width:1200px;
+  margin:30px auto 0;
+  display:flex;
+  justify-content:center;
+  gap:22px;
+  flex-wrap:wrap;
+}
+
+.main-nav a{
+  color:#fff;
+  font-size:14px;
+}
+
+.contact-btn{
+  background:#fff;
+  color:#000 !important;
+  padding:6px 12px;
+  border-radius:4px;
+}
+
+/* MOBILE FIX */
+@media (max-width:768px){
+  .header-top{
+    flex-direction:column;
+    text-align:center;
+    gap:10px;
+  }
+
+  .brand-right{
+    text-align:center;
+  }
+
+  .brand-left{
+    font-size:36px;
+  }
+}
+  
 /* NEW HEADER DESIGN */
 .main-header{
   background:#000;
@@ -278,15 +284,15 @@ footer{
 <header class="main-header">
   <div class="header-top">
 
-    <!-- LEFT TEXT -->
-    <div class="left-info">
-      <div class="unit">A Unit of ALVIX Enterprises</div>
-      <div class="premium">Premium Lighting Solutions</div>
+    <!-- LEFT : ALVIX -->
+    <div class="brand-left">
+      ALVIX
     </div>
 
-    <!-- RIGHT BRAND -->
-    <div class="right-brand">
-      ALVIX
+    <!-- RIGHT : UNIT + PREMIUM -->
+    <div class="brand-right">
+      <div class="unit">A Unit of ALVIX Enterprises</div>
+      <div class="premium">Premium Lighting Solutions</div>
     </div>
 
   </div>
