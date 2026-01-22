@@ -6,6 +6,41 @@
 <title>ALVIX | Premium Lighting Solutions</title>
 
 <style>
+  /* HEADER FIX LAYOUT */
+.header-top{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+/* LEFT SIDE TEXT */
+.brand-left{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.brand-left .unit{
+  font-size:15px;
+  font-weight:600;
+  letter-spacing:1px;
+  color:#ddd;
+}
+
+.brand-left .premium{
+  font-size:14px;
+  color:#aaa;
+}
+
+/* RIGHT SIDE BRAND NAME */
+.brand-right{
+  font-size:54px;
+  font-weight:800;
+  letter-spacing:4px;
+  color:#d4af37; /* premium gold */
+}
   .brand{
   display:flex;
   align-items:center;
@@ -243,14 +278,15 @@ footer{
 <header class="main-header">
   <div class="header-top">
 
-    <div class="brand">
-      <img src="favicon.png" alt="ALVIX" class="logo">
+    <!-- LEFT TEXT -->
+    <div class="left-info">
+      <div class="unit">A Unit of ALVIX Enterprises</div>
+      <div class="premium">Premium Lighting Solutions</div>
+    </div>
 
-      <div class="brand-text-wrap">
-        <div class="brand-text">ALVIX</div>
-        <div class="unit">A Unit of ALVIX Enterprises</div>
-        <div class="premium">Premium Lighting Solutions</div>
-      </div>
+    <!-- RIGHT BRAND -->
+    <div class="right-brand">
+      ALVIX
     </div>
 
   </div>
