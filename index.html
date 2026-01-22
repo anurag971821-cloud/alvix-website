@@ -1,299 +1,172 @@
-<html lang="en" class="scroll-smooth"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALVIX | Premium Lighting Solutions</title>
-    <meta name="description" content="ALVIX - Premium LED lighting manufacturer for residential, commercial, and infrastructure projects. A Unit of ALVIX Enterprises.">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Iconify -->
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    
-    <!-- Fonts: Plus Jakarta Sans for a premium, architectural look -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        /* Base Styles */
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #000000; /* Pure Black */
-            color: #ffffff;
-            overflow-x: hidden; /* Prevent horizontal scroll */
-            overflow-y: auto;   /* Allow vertical scroll */
-        }
+<title>ALVIX | Premium LED Lighting Solutions India</title>
+<meta name="description" content="ALVIX is a premium LED lighting manufacturer in India offering indoor, outdoor, street, solar and decorative lighting solutions for residential, commercial and government projects.">
+<meta name="keywords" content="ALVIX lighting, LED lighting India, indoor LED lights, outdoor lights, street lights, solar lighting, decorative lighting, electrical accessories">
 
-        /* Gold Accent Color */
-        .text-gold { color: #D4AF37; }
-        .bg-gold { background-color: #D4AF37; }
-        .border-gold { border-color: #D4AF37; }
-        .hover-text-gold:hover { color: #D4AF37; }
-        
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #0a0a0a;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #333;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #D4AF37;
-        }
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
-        /* Accordion Animation */
-        details > summary {
-            list-style: none;
-        }
-        details > summary::-webkit-details-marker {
-            display: none;
-        }
-        details[open] summary ~ * {
-            animation: sweep .3s ease-in-out;
-        }
-        @keyframes sweep {
-            0%    {opacity: 0; transform: translateY(-5px)}
-            100%  {opacity: 1; transform: translateY(0)}
-        }
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
 
-        /* Smooth Scroll Padding for Fixed Header */
-        html {
-            scroll-padding-top: 100px;
-        }
-
-        /* Mobile Menu Logic (CSS Only) */
-        #menu-toggle:checked ~ #mobile-menu {
-            display: block;
-        }
-    </style>
+section[id] {
+  scroll-margin-top: 120px;
+}
+</style>
 </head>
-<body class="antialiased selection:bg-amber-900 selection:text-white">
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/919310382443" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20b85a] text-white p-4 rounded-full shadow-2xl transition-all duration-300 flex items-center justify-center group border border-white/10">
-        <iconify-icon icon="solar:chat-round-dots-linear" width="28" stroke-width="1.5"></iconify-icon>
-        <span class="absolute right-full mr-4 bg-zinc-900 text-white text-xs py-2 px-3 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-white/10 shadow-xl">
-            Chat on WhatsApp
-        </span>
-    </a>
+<body class="bg-black text-white antialiased">
 
-    <!-- Header -->
-    <header class="fixed top-0 w-full z-40 bg-black border-b border-white/10 shadow-lg shadow-black/50">
-        <div class="max-w-7xl mx-auto px-6 py-4">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                
-                <!-- Logo & Right Side Info Wrapper -->
-                <div class="w-full flex justify-between items-center">
-                    <!-- Left: Brand Logo -->
-                    <a href="#" class="text-3xl md:text-4xl tracking-tight font-semibold text-white">
-                        ALVIX
-                    </a>
+<!-- WHATSAPP -->
+<a href="https://wa.me/919310382443" target="_blank"
+class="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-500 p-4 rounded-full shadow-xl">
+<iconify-icon icon="solar:chat-round-dots-linear" width="28"></iconify-icon>
+</a>
 
-                    <!-- Mobile Menu Button -->
-                    <label for="menu-toggle" class="cursor-pointer lg:hidden text-white p-2">
-                        <iconify-icon icon="solar:hamburger-menu-linear" width="28"></iconify-icon>
-                    </label>
+<!-- HEADER -->
+<header class="fixed top-0 w-full z-40 bg-black/90 backdrop-blur border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div>
+      <h1 class="text-4xl font-bold tracking-widest">ALVIX</h1>
+    </div>
+    <div class="text-right hidden md:block">
+      <p class="text-sm font-semibold">A Unit of ALVIX Enterprises</p>
+      <p class="text-xs text-gray-400">Premium Lighting Solutions</p>
+    </div>
+  </div>
 
-                    <!-- Right: Brand Context (Visible on desktop) -->
-                    <div class="hidden lg:block text-right">
-                        <p class="text-xs text-zinc-400 uppercase tracking-widest font-light">A Unit of ALVIX Enterprises</p>
-                        <p class="text-xs text-gold tracking-wide font-medium mt-0.5">Premium Lighting Solutions</p>
-                    </div>
-                </div>
-            </div>
+  <nav class="border-t border-white/10">
+    <ul class="flex flex-wrap justify-center gap-6 py-4 text-sm uppercase tracking-widest">
+      <li><a href="#about" class="hover:text-amber-400">About Us</a></li>
+      <li><a href="#products" class="hover:text-amber-400">Products</a></li>
+      <li><a href="#trusted" class="hover:text-amber-400">Why ALVIX</a></li>
+      <li><a href="#catalog" class="hover:text-amber-400">Catalog</a></li>
+      <li><a href="#contact" class="hover:text-amber-400">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-            <!-- Navigation Links -->
-            <input type="checkbox" id="menu-toggle" class="hidden">
-            
-            <!-- Desktop Nav -->
-            <nav class="hidden lg:block mt-6 border-t border-white/5 pt-4">
-                <ul class="flex justify-center gap-8 text-xs font-medium text-zinc-400 uppercase tracking-[0.15em]">
-                    <li><a href="#home" class="hover-text-gold transition-colors">Home</a></li>
-                    <li><a href="#about" class="hover-text-gold transition-colors">About</a></li>
-                    <li><a href="#products" class="hover-text-gold transition-colors">Products</a></li>
-                    <li><a href="#trusted" class="hover-text-gold transition-colors">Why ALVIX</a></li>
-                    <li><a href="#mission-vision" class="hover-text-gold transition-colors">Mission &amp; Vision</a></li>
-                    <li><a href="#founder" class="hover-text-gold transition-colors">Founder</a></li>
-                    <li><a href="#catalog" class="hover-text-gold transition-colors">Catalog</a></li>
-                    <li><a href="#contact" class="hover-text-gold transition-colors">Contact</a></li>
-                </ul>
-            </nav>
+<!-- HERO -->
+<section id="home" class="pt-56 pb-32 text-center px-6">
+  <h2 class="text-5xl md:text-7xl font-light mb-6">
+    Premium Lighting<br><span class="font-semibold">Solutions by ALVIX</span>
+  </h2>
+  <p class="text-gray-400 max-w-2xl mx-auto mb-6">
+    Indoor • Outdoor • Street • Solar • Decorative • Electrical Accessories
+  </p>
+  <a href="#products" class="inline-block mt-6 px-8 py-4 bg-white text-black font-semibold">
+    View Products
+  </a>
+</section>
 
-            <!-- Mobile Nav Menu -->
-            <nav id="mobile-menu" class="hidden lg:hidden mt-4 pt-4 border-t border-white/10 bg-black pb-4">
-                <div class="text-right mb-4 lg:hidden">
-                    <p class="text-[10px] text-zinc-500 uppercase tracking-widest">A Unit of ALVIX Enterprises</p>
-                    <p class="text-[10px] text-gold tracking-wide font-medium">Premium Lighting Solutions</p>
-                </div>
-                <ul class="flex flex-col gap-4 text-sm font-medium text-zinc-300 uppercase tracking-widest text-center">
-                    <li><a href="#home" class="block py-2 hover:text-gold">Home</a></li>
-                    <li><a href="#about" class="block py-2 hover:text-gold">About</a></li>
-                    <li><a href="#products" class="block py-2 hover:text-gold">Products</a></li>
-                    <li><a href="#trusted" class="block py-2 hover:text-gold">Why ALVIX</a></li>
-                    <li><a href="#mission-vision" class="block py-2 hover:text-gold">Mission &amp; Vision</a></li>
-                    <li><a href="#founder" class="block py-2 hover:text-gold">Founder</a></li>
-                    <li><a href="#catalog" class="block py-2 hover:text-gold">Catalog</a></li>
-                    <li><a href="#contact" class="block py-2 hover:text-gold">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<!-- ABOUT -->
+<section id="about" class="py-24 px-6 bg-zinc-900/30">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 class="text-4xl mb-6">About ALVIX</h2>
+      <p class="text-gray-400 leading-relaxed">
+        ALVIX is a premium LED lighting brand under <b>ALVIX Enterprises</b>,
+        delivering high-quality, energy-efficient and durable lighting solutions
+        for residential, commercial, industrial and infrastructure projects across India.
+      </p>
+    </div>
 
-    <!-- Hero Section -->
-    <section id="home" class="relative pt-40 pb-20 md:pt-60 md:pb-32 px-6 overflow-hidden min-h-[90vh] flex items-center justify-center">
-        <!-- Abstract Background -->
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-zinc-900/50 via-black to-black -z-10"></div>
-        <div class="absolute top-1/4 right-0 w-[500px] h-[500px] bg-amber-500/5 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
+    <!-- Founder -->
+    <div class="border-l border-amber-500 pl-6">
+      <p class="italic text-gray-300 mb-4">
+        “ALVIX was founded with a vision to deliver dependable lighting solutions
+        that customers can trust for years.”
+      </p>
+      <p class="font-semibold">Anurag Tomar</p>
+      <p class="text-sm text-gray-400">Founder, ALVIX Enterprises</p>
+    </div>
+  </div>
+</section>
 
-        <div class="max-w-5xl mx-auto text-center z-10">
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gold/30 bg-gold/5 text-gold text-[10px] tracking-[0.2em] uppercase mb-8">
-                <iconify-icon icon="solar:star-linear" width="12"></iconify-icon>
-                <span>Excellence in Illumination</span>
-            </div>
-            
-            <h1 class="text-4xl md:text-6xl lg:text-7xl tracking-tighter text-white font-medium mb-6 leading-[1.1]">
-                Premium Lighting <br>
-                <span class="text-zinc-500">Solutions by ALVIX</span>
-            </h1>
-            
-            <p class="text-base md:text-lg text-zinc-400 font-light max-w-2xl mx-auto mb-10 leading-relaxed">
-                Engineered for homes, businesses and infrastructure projects. We illuminate spaces with precision, efficiency and elegance.
-            </p>
+<!-- PRODUCTS -->
+<section id="products" class="py-24 px-6">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-4xl text-center mb-12">Product Range</h2>
 
-            <p class="text-[10px] md:text-xs text-zinc-500 uppercase tracking-[0.2em] mb-12 px-4">
-                Indoor | Outdoor | Street | Solar | Decorative | Electrical Accessories
-            </p>
+    <div class="space-y-4 text-gray-300">
+      <p>• Indoor Lighting – LED Bulb, Panel, Downlight, Tube, COB, Track</p>
+      <p>• Outdoor & Garden Lighting – Flood, Wall, Gate, Spike, Surface</p>
+      <p>• Street & Infrastructure – Street Light, High Mast, Tunnel, Highway</p>
+      <p>• Solar Lighting – Solar Street, Flood, Garden, Home Systems</p>
+      <p>• Decorative & Home Lighting – Pendant, Chandelier, Vintage, Accent</p>
+      <p>• Smart & Advanced Lighting – Smart Bulbs, Sensors, RGB</p>
+      <p>• Electrical Accessories – Driver, PCB, Wire, Switch & Socket</p>
+    </div>
+  </div>
+</section>
 
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#products" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white hover:bg-zinc-200 text-black text-xs font-bold tracking-widest uppercase transition-all duration-300">
-                    View Products
-                </a>
-                <a href="#contact" class="inline-flex items-center justify-center gap-2 px-8 py-4 border border-zinc-700 hover:border-gold hover:text-gold text-zinc-300 text-xs font-bold tracking-widest uppercase transition-all duration-300">
-                    Project Inquiry
-                </a>
-            </div>
-        </div>
-    </section>
+<!-- WHY TRUSTED -->
+<section id="trusted" class="py-24 px-6 bg-zinc-900/30">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl text-center mb-12">Why ALVIX is Trusted</h2>
 
-    <!-- About Section -->
-    <section id="about" class="py-24 px-6 border-t border-white/5 bg-zinc-900/10">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-2xl md:text-3xl font-medium tracking-tight text-white mb-8">About <span class="text-gold">ALVIX</span></h2>
-            <p class="text-zinc-400 leading-8 font-light text-base md:text-lg mb-8">
-                ALVIX is a premium LED lighting brand under <span class="text-white font-normal">ALVIX Enterprises</span>, delivering high-quality, energy-efficient and modern lighting solutions across India for residential, commercial and infrastructure projects.
-            </p>
-            <p class="text-zinc-500 leading-7 font-light text-sm md:text-base max-w-2xl mx-auto">
-                Our focus is on durability, performance consistency and long-term reliability, ensuring that every lumen we produce adds value to your space.
-            </p>
-        </div>
-    </section>
+    <div class="grid md:grid-cols-3 gap-8 text-gray-300">
+      <div>✔ Made in India</div>
+      <div>✔ Energy Efficient LED Technology</div>
+      <div>✔ Suitable for Government & Private Projects</div>
+      <div>✔ Long Life & High Lumen Output</div>
+      <div>✔ Warranty on Products</div>
+      <div>✔ Strong After Sales Support</div>
+    </div>
+  </div>
+</section>
 
-    <!-- Products Section -->
-    <section id="products" class="py-24 px-6 border-t border-white/5 bg-black">
-        <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-16">
-                <span class="text-gold text-xs tracking-widest uppercase block mb-3">Our Portfolio</span>
-                <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-white">Product Catalog</h2>
-            </div>
+<!-- CATALOG -->
+<section id="catalog" class="py-24 px-6 text-center">
+  <h2 class="text-4xl mb-6">Product Catalog</h2>
+  <a href="DOC-20260121-WA0000.pdf" target="_blank"
+  class="inline-block px-8 py-4 border border-white hover:bg-white hover:text-black">
+    Download Catalog (PDF)
+  </a>
+</section>
 
-            <div class="flex flex-col gap-px bg-white/10 border border-white/10 overflow-hidden rounded-lg">
-                <!-- 1. Indoor Lighting -->
-                <details class="group bg-black">
-                    <summary class="flex justify-between items-center cursor-pointer p-6 md:p-8 hover:bg-zinc-900 transition-colors select-none">
-                        <div class="flex items-center gap-6">
-                            <span class="text-2xl text-zinc-600 group-hover:text-gold transition-colors">01</span>
-                            <span class="text-lg md:text-xl font-medium text-white tracking-wide">Indoor Lighting</span>
-                        </div>
-                        <span class="text-zinc-500 group-open:rotate-180 transition-transform duration-300">
-                            <iconify-icon icon="solar:alt-arrow-down-linear" width="24"></iconify-icon>
-                        </span>
-                    </summary>
-                    <div class="px-6 pb-8 md:pl-20 md:pr-8 bg-zinc-900/30">
-                        <ul class="grid grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-8">
-                            <li class="flex items-center gap-3 text-zinc-400 text-sm font-light border-b border-white/5 pb-2"><iconify-icon icon="solar:lightbulb-linear" class="text-gold"></iconify-icon> LED Bulb</li>
-                            <li class="flex items-center gap-3 text-zinc-400 text-sm font-light border-b border-white/5 pb-2"><iconify-icon icon="solar:stop-linear" class="text-gold"></iconify-icon> LED Panel</li>
-                            <li class="flex items-center gap-3 text-zinc-400 text-sm font-light border-b border-white/5 pb-2"><iconify-icon icon="solar:arrow-to-down-linear" class="text-gold"></iconify-icon> LED Downlight</li>
-                            <li class="flex items-center gap-3 text-zinc-400 text-sm font-light border-b border-white/5 pb-2"><iconify-icon icon="solar:minus-linear" class="text-gold"></iconify-icon> LED Tube Light</li>
-                            <li class="flex items-center gap-3 text-zinc-400 text-sm font-light border-b border-white/5 pb-2"><iconify-icon icon="solar:record-circle-linear" class="text-gold"></iconify-icon> COB Spot Light</li>
-                            <li class="flex items-center gap-3 text-zinc-400 text-sm font-light border-b border-white/5 pb-2"><iconify-icon icon="solar:slider-vertical-linear" class="text-gold"></iconify-icon> Track Light</li>
-                        </ul>
-                    </div>
-                </details>
+<!-- CONTACT -->
+<section id="contact" class="py-24 px-6 bg-zinc-900/30">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
 
-                <!-- 2. Outdoor & Garden -->
-                <details class="group bg-black">
-                    <summary class="flex justify-between items-center cursor-pointer p-6 md:p-8 hover:bg-zinc-900 transition-colors select-none">
-                        <div class="flex items-center gap-6">
-                            <span class="text-2xl text-zinc-600 group-hover:text-gold transition-colors">02</span>
-                            <span class="text-lg md:text-xl font-medium text-white tracking-wide">Outdoor &amp; Garden Lighting</span>
-                        </div>
-                        <span class="text-zinc-500 group-open:rotate-180 transition-transform duration-300">
-                            <iconify-icon icon="solar:alt-arrow-down-linear" width="24"></iconify-icon>
-                        </span>
-                    </summary>
-                    <div class="px-6 pb-8 md:pl-20 md:pr-8 bg-zinc-900/30">
-                        <ul class="grid grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-8">
-                            <li class="flex items-center gap-3 text-zinc-400 text-sm font-light border-b border-white/5 pb-2"><iconify-icon icon="solar:leaf-linear" class="text-gold"></iconify-icon> Garden Lights</li>
-                            <li class="flex items-center gap-3 text-zinc-400 text-sm font-light border-b border-white/5 pb-2"><iconify-icon icon="solar:home-add-linear" class="text-gold"></iconify-icon> Gate Lights</li>
-                            <li class="flex items-center gap-3 text-zinc-400 text-sm font-light border-b border-white/5 pb-2"><iconify-icon icon="solar:wall-linear" class="text-gold"></iconify-icon> Wall Lights</li>
-                            <li class="flex items-center gap-3 text-zinc-400 text-sm font-light border-b border-white/5 pb-2"><iconify-icon icon="solar:flashlight-linear" class="text-gold"></iconify-icon> Outdoor Flood Lights</li>
-                            <li class="flex items-center gap-3 text-zinc-400 text-sm font-light border-b border-white/5 pb-2"><iconify-icon icon="solar:map-point-linear" class="text-gold"></iconify-icon> Spike Lights</li>
-                            <li class="flex items-center gap-3 text-zinc-400 text-sm font-light border-b border-white/5 pb-2"><iconify-icon icon="solar:upload-linear" class="text-gold"></iconify-icon> Surface Lights</li>
-                        </ul>
-                    </div>
-                </details>
+    <div>
+      <h2 class="text-4xl mb-6">Contact Us</h2>
+      <p>📞 9310382443</p>
+      <p>📧 alvixenterprises@gmail.com</p>
+      <p class="mt-4">GST: 09CKEPT3515L1ZT</p>
+      <p>UDYAM: UDYAM-UP-28-0196333</p>
+      <p class="mt-4">
+        Escorts Colony, Dadri,<br>
+        Gautam Buddha Nagar,<br>
+        Uttar Pradesh – 203207
+      </p>
+    </div>
 
-                <!-- 3. Street & Infrastructure -->
-                <details class="group bg-black">
-                    <summary class="flex justify-between items-center cursor-pointer p-6 md:p-8 hover:bg-zinc-900 transition-colors select-none">
-                        <div class="flex items-center gap-6">
-                            <span class="text-2xl text-zinc-600 group-hover:text-gold transition-colors">03</span>
-                            <span class="text-lg md:text-xl font-medium text-white tracking-wide">Street &amp; Infrastructure</span>
-                        </div>
-                        <span class="text-zinc-500 group-open:rotate-180 transition-transform duration-300">
-                            <iconify-icon icon="solar:alt-arrow-down-linear" width="24"></iconify-icon>
-                        </span>
-                    </summary>
-                    <div class="px-6 pb-8 md:pl-20 md:pr-8 bg-zinc-900/30">
-                        <ul class="grid grid-cols-2 md:grid-cols-2 gap-y-4 gap-x-8">
-                            <li class="flex items-center gap-3 text-zinc-400 text-sm font-light border-b border-white/5 pb-2"> LED Street Lights</li>
-                            <li class="flex items-center gap-3 text-zinc-400 text-sm font-light border-b border-white/5 pb-2"> LED Flood Lights</li>
-                            <li class="flex items-center gap-3 text-zinc-400 text-sm font-light border-b border-white/5 pb-2"> High Mast Lights</li>
-                            <li class="flex items-center gap-3 text-zinc-400 text-sm font-light border-b border-white/5 pb-2"> Tunnel Lights</li>
-                            <li class="flex items-center gap-3 text-zinc-400 text-sm font-light border-b border-white/5 pb-2"> Parking Area Lights</li>
-                            <li class="flex items-center gap-3 text-zinc-400 text-sm font-light border-b border-white/5 pb-2"> Highway Lights</li>
-                            <li class="flex items-center gap-3 text-zinc-400 text-sm font-light border-b border-white/5 pb-2"> Industrial Lights</li>
-                        </ul>
-                    </div>
-                </details>
+    <iframe
+      src="https://maps.google.com/maps?q=Alvix%20Enterprises%20Escorts%20Colony%20Dadri%20Gautam%20Buddha%20Nagar&t=&z=16&ie=UTF8&iwloc=&output=embed"
+      width="100%" height="300" style="border:0;">
+    </iframe>
+  </div>
+</section>
 
-                <!-- 4. Solar Lighting -->
-                <details class="group bg-black">
-                    <summary class="flex justify-between items-center cursor-pointer p-6 md:p-8 hover:bg-zinc-900 transition-colors select-none">
-                        <div class="flex items-center gap-6">
-                            <span class="text-2xl text-zinc-600 group-hover:text-gold transition-colors">04</span>
-                            <span class="text-lg md:text-xl font-medium text-white tracking-wide">Solar Lighting</span>
-                        </div>
-                        <span class="text-zinc-500 group-open:rotate-180 transition-transform duration-300">
-                            <iconify-icon icon="solar:alt-arrow-down-linear" width="24"></iconify-icon>
-                        </span>
-                    </summary>
-                    <div class="px-6 pb-8 md:pl-20 md:pr-8 bg-zinc-900/30">
-                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
-                            <li class="flex items-center gap-3 text-zinc-400 text-sm font-light border-b border-white/5 pb-2"> Solar Street Lights</li>
-                            <li class="flex items-center gap-3 text-zinc-400 text-sm font-light border-b border-white/5 pb-2"> Solar Flood Lights</li>
-                            <li class="flex items-center gap-3 text-zinc-400 text-sm font-light border-b border-white/5 pb-2"> Solar Garden Lights</li>
-                            <li class="flex items-center gap-3 text-zinc-400 text-sm font-light border-b border-white/5 pb-2"> Solar Home Lighting System</li>
-                        </ul>
-                    </div>
-                </details>
+<!-- FOOTER -->
+<footer class="py-10 text-center border-t border-white/10">
+  <p>© 2026 ALVIX Enterprises</p>
+  <p class="text-gray-500 text-sm">Thank you for choosing ALVIX</p>
+</footer>
 
-                <!-- 5. Decorative -->
-                <details class="group bg-black">
-                    <summary class="flex justify-between items-center cursor-pointer p-6 md:p-8 hover:bg-zinc-900 transition-colors select-none">
-  
+</body>
+</html>
